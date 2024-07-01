@@ -1,0 +1,6 @@
+@Squib.UserService.API_HostAddress = http://localhost:5282
+
+GET {{Squib.UserService.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
