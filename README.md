@@ -6,9 +6,10 @@ TODO: Guide users through getting your code up and running on their own system. 
 1.	Installation process
 2.	Software dependencies
 3.	Latest releases
-4.	API references
+4.	API reference .
+5. Reference
 
-# Build and Test
+# Build and Test and learn
 TODO: Describe and show how to build your code and run the tests. 
 
 # Contribute
