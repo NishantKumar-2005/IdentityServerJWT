@@ -1,0 +1,86 @@
+# Compiled binary folder
+bin/
+obj/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Auto-generated files
+*.vs/
+.vscode/
+
+# Logs
+*.log
+logs/
+
+# Database
+*.mdf
+*.ldf
+
+# Configuration
+appsettings.*.json
+secrets.json
+
+# OS generated files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Visual Studio Code
+.vscode/*
+
+# Rider
+.idea/
+.idea_modules/
+.idea_workspace/
+.idea_artifacts/
+.idea_cache/
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Output of the dotnet watch command
+watcherTasks.txt
+watcherTasks.json
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# JetBrains Rider
+.idea/
+.idea_modules/
+.idea_workspace/
+.idea_artifacts/
+.idea_cache/
+.idea_/workspace.xml
+
+# npm
+node_modules/
+
+# Azure Pipelines
+.azure-pipelines/
+
+# Coverage Reports
+coverage/
+
+# Additional folders
+**/local.settings.json
+**/local.settings.*.json
+
+# Others
+*.vs/
+*.pyc
+*.class
+*.csproj.user
