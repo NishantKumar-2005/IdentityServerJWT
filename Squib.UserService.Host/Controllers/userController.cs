@@ -1,13 +1,17 @@
+using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
-using Squib.UserService.Host.Services;
+using Squib.UserService.API.Service;
+using Squib.UserService.API.Service.Interface;
+
 
 [ApiController]
 [Route("api/[controller]")]
+
 public class UserController : ControllerBase
 {
-    private readonly IUserService _userService;
+    private readonly IUSER_Service _userService;
 
-    public UserController(IUserService userService)
+    public UserController(IUSER_Service userService)
     {
         _userService = userService;
     }
@@ -15,19 +19,11 @@ public class UserController : ControllerBase
     [HttpGet]
     public IActionResult GetAllUsers()
     {
-        var users = _userService.GetAllUsers();
+        var users = _userService.GetUsers();
         return Ok(users);
     }
 
-    public IActionResult GetUserById(int id){
-        var user = _userService.GetUserById(id);
-        return Ok(user);
-    }
-
-    public IActionResult CreateUser(User user){
-        _userService.CreateUser(user);
-        return Ok();
-    }
+   
 
     // Add other actions (e.g., GetUserById, CreateUser, etc.)
 }
