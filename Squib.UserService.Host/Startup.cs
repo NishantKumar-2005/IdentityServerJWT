@@ -3,6 +3,9 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Squib.UserService.API.Repository;
+using Squib.UserService.API;
+using Squib.UserService.API.Service.Interface;
 
 public class Startup
 {
@@ -16,6 +19,8 @@ public class Startup
     public void ConfigureServices(IServiceCollection services)
     {
         services.AddControllers();
+        services.AddSingleton<IUserRepo, UserRepo>();
+        services.AddSingleton<IUSER_Service, UserService>();
         // Add other services here
     }
 
