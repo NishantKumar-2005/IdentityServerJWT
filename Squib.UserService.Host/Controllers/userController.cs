@@ -1,7 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 using Squib.UserService.API.Service;
-using Squib.UserService.API.Service.Interface;
 
 
 [ApiController]
@@ -21,6 +20,17 @@ public class UserController : ControllerBase
     {
         var users = _userService.GetUsers();
         return Ok(users);
+    }
+
+    [HttpGet("{id}")]
+    public IActionResult GetUserById(int id)
+    {
+        var user = _userService.GetUserById(id);
+        if (user == null)
+        {
+            return NotFound();
+        }
+        return Ok(user);
     }
 
    
