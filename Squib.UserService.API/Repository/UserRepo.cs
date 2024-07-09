@@ -12,13 +12,13 @@ public class UserRepo : IUserRepo
     private readonly ConnectionString _connectionString;
     
 
-        UserRepo(ILogger<UserRepo> logger, IOptions<ConnectionString> connectionStringOption)
+        public UserRepo(ILogger<UserRepo> logger, IOptions<ConnectionString> connectionStringOption)
         {
             _logger = logger;
             _connectionString = connectionStringOption.Value;
         }
     public List<UserDto> GetUsers(){
-        List<UserDto> UserData = [];
+        List<UserDto> UserData = new List<UserDto>();
         // Add logic to get users from the database
         try
         {
@@ -39,9 +39,8 @@ public class UserRepo : IUserRepo
         }
         }
         catch (Exception e)
-        {
-            
-                _logger.LogError($"{e.Message}\n{e.StackTrace}");
+        {   
+            _logger.LogError($"{e.Message}\n{e.StackTrace}");
         }
         
 
