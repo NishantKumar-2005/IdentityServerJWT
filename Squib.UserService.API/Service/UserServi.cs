@@ -21,4 +21,16 @@ public class UserServi: IUSER_Service
     {
         return _userRepo.GetUserById(id);
     }
+
+    public void UpdateUser(UserDto user){
+        _userRepo.UpdateUser(user);
+    }
+    public void DeleteUser(int id){
+        _userRepo.DeleteUser(id);
+    }
+    public void AddUser(UserDto user){
+         _userRepo.AddUser(user);
+    }
+
+
 }

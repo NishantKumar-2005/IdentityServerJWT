@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
+using Squib.UserService.API.Model;
 using Squib.UserService.API.Service;
 
 
@@ -32,8 +33,37 @@ public class UserController : ControllerBase
         }
         return Ok(user);
     }
+    // Add other actions (e.g., GetUserById, CreateUser, etc.)
+
+    [HttpPost]
+
+    [HttpPost]
+public IActionResult AddUser([FromBody] UserDto user)
+{
+    _userService.AddUser(user);
+    return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
+}
+    [HttpPut("{id}")]
+    public IActionResult UpdateUser(int id, [FromBody] UserDto user)
+    {
+        if (id!= user.Id)
+        {
+            return BadRequest();
+        }
+        _userService.UpdateUser(user);
+        return NoContent();
+    }
+
+    [HttpDelete("{id}")]
+    public IActionResult DeleteUser(int id)
+    {
+        _userService.DeleteUser(id);
+        return NoContent();
+    }
+
+
 
    
 
-    // Add other actions (e.g., GetUserById, CreateUser, etc.)
+    
 }
