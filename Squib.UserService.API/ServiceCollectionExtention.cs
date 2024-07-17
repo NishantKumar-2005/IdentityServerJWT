@@ -11,6 +11,8 @@ namespace Squib.UserService.API
             services.Configure<ConnectionString>(configuration.GetSection("ConnectionStrings"));
             services.AddSingleton<IUserRepo, UserRepo>();
             services.AddSingleton<IUSER_Service, UserServi>();
+            services.AddSingleton<IORDER_Service,OrderServi>();
+            services.AddSingleton<IOrderRepo,OrderRepo>();
             return services;
         }
     }

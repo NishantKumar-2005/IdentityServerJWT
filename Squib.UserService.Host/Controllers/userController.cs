@@ -35,7 +35,6 @@ public class UserController : ControllerBase
     }
     // Add other actions (e.g., GetUserById, CreateUser, etc.)
 
-    [HttpPost]
 
     [HttpPost]
 public IActionResult AddUser([FromBody] UserDto user)

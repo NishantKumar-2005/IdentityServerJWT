@@ -13,6 +13,8 @@ public interface IUserRepo
 
     public void DeleteUser(int id);
 
+   
+
 
 
 }
