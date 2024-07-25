@@ -1,0 +1,12 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Squib.UserService.API",
+    "\\Squib.UserService.API\\model",
+    "\\Squib.UserService.API\\Properties",
+    "\\Squib.UserService.Host",
+    "\\Squib.UserService.Host\\Controllers"
+  ],
+  "SelectedNode": "\\Squib.UserService.API\\model\\UserDbContext.cs",
+  "PreviewInSolutionExplorer": false
+}
