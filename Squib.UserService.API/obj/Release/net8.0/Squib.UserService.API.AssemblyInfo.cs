@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Squib.UserService.API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+af539a9423522a7cab9c6de3afc8f471585aad49")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+22b99775395f36a4ac32e8f2328a812e7012aaab")]
 [assembly: System.Reflection.AssemblyProductAttribute("Squib.UserService.API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Squib.UserService.API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
