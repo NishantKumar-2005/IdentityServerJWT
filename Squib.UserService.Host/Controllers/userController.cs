@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Squib.UserService.API.Model;
 using Squib.UserService.API.Service;
@@ -6,6 +7,7 @@ using Squib.UserService.API.Service;
 
 [ApiController]
 [Route("api/[controller]")]
+[Authorize]
 
 public class UserController : ControllerBase
 {
