@@ -136,3 +136,5 @@ E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.API\obj\Debug\net8.0\ref
 E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.API\obj\Debug\net8.0\Squib.UserService.API.pdb
 E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.API\obj\Debug\net8.0\Squib.UserService.API.genruntimeconfig.cache
 E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.API\obj\Debug\net8.0\ref\Squib.UserService.API.dll
+C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.API\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.API\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

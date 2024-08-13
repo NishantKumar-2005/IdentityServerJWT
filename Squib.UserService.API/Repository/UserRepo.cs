@@ -1,7 +1,9 @@
 ﻿using System.Data;
+using AutoMapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
 using Squib.UserService.API.config;
+using Squib.UserService.API.model;
 using Squib.UserService.API.Model;
 using Squib.UserService.API.Repository;
 namespace Squib.UserService.API;
@@ -11,13 +13,15 @@ public class UserRepo : IUserRepo
     private readonly ILogger<UserRepo> _logger;
     private readonly ConnectionString _connectionString;
 
+    private readonly IMapper _mapper;
 
-    public UserRepo(ILogger<UserRepo> logger, IOptions<ConnectionString> connectionStringOption)
+    public UserRepo(ILogger<UserRepo> logger, IOptions<ConnectionString> connectionStringOption , IMapper mapper)
     {
         _logger = logger;
         _connectionString = connectionStringOption.Value;
+        _mapper = mapper;
     }
-    public List<UserDto> GetUsers()
+    public List<UserRDto> GetUsers()
     {
         List<UserDto> UserData = new List<UserDto>();
         // Add logic to get users from the database
@@ -38,6 +42,7 @@ public class UserRepo : IUserRepo
                     Id = reader.GetInt32(0),
                     Email = reader.GetString(1),
                     FirstName = reader.GetString(2),
+                    LastName = reader.GetString(3)
                 });
             }
         }
@@ -47,8 +52,11 @@ public class UserRepo : IUserRepo
         }
 
 
+        // var UserRdata = _mapper.Map<UserRDto>(UserData);
+        var UserRdata = _mapper.Map<List<UserRDto>>(UserData);
+        return UserRdata;
 
-        return UserData;
+
     }
 
     public UserDto GetUserById(int id)
@@ -95,9 +103,10 @@ public void AddUser(UserDto user)
         command.CommandType = CommandType.Text;
 
         // Updated SQL command to exclude the ID column
-        command.CommandText = "INSERT INTO UserDto_New (Email, FirstName) VALUES (@Email, @FirstName)";
+        command.CommandText = "INSERT INTO UserDto_New (Email, FirstName , LastName) VALUES (@Email, @FirstName,@LastName)";
         command.Parameters.AddWithValue("@Email", user.Email);
         command.Parameters.AddWithValue("@FirstName", user.FirstName);
+        command.Parameters.AddWithValue("@LastName", user.LastName);
         command.Connection = connection;
         connection.Open();
         command.ExecuteNonQuery();
@@ -117,10 +126,11 @@ public void AddUser(UserDto user)
             using var connection = new SqlConnection(_connectionString.MyDb);
             using var command = connection.CreateCommand();
             command.CommandType = CommandType.Text;
-            command.CommandText = "UPDATE UserDto_New SET Email = @Email, FirstName = @FirstName WHERE Id = @Id";
+            command.CommandText = "UPDATE UserDto_New SET Email = @Email, FirstName = @FirstName,LastName=@LastName WHERE Id = @Id";
             command.Parameters.AddWithValue("@Email", user.Email);
             command.Parameters.AddWithValue("@FirstName", user.FirstName);
             command.Parameters.AddWithValue("@Id", user.Id);
+            command.Parameters.AddWithValue("@LastName", user.LastName);
             command.Connection = connection;
             connection.Open();
             command.ExecuteNonQuery();

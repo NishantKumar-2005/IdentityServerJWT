@@ -12,6 +12,8 @@ using Newtonsoft.Json;
 using Newtonsoft.Json.Serialization;
 using Serilog;
 using Squib.UserService.API;
+using Squib.UserService.API.Profile;
+using Squib.UserService.API.Repository;
 using System.Text;
 
 namespace Squib.UserService.Host
@@ -50,7 +52,7 @@ namespace Squib.UserService.Host
 
             services.AddHealthChecks();
 
-            //ADD JWT AUTHENTICATION
+            // Add JWT Authentication
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -70,6 +72,9 @@ namespace Squib.UserService.Host
                 });
 
             services.AddControllers();
+            services.AddAutoMapper(typeof(UserProfile).Assembly); // Adjust as necessary
+            services.AddScoped<IUserRepo, UserRepo>(); // Register your UserRepo
+
         }
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, ILoggerFactory loggerFactory)
@@ -85,8 +90,8 @@ namespace Squib.UserService.Host
 
             app.UseHttpsRedirection();
             app.UseRouting();
-            app.UseAuthorization();
             app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHealthChecks("/livez");

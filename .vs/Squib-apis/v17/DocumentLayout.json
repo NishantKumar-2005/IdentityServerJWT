@@ -1,46 +1,13 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\college MSIT\\Squib-apis\\Squib-apis\\",
+  "WorkspaceRootPath": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.Host\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.Host\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\NewFile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.Host\\Controllers\\userController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.Host\\Controllers\\userController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.IdentityServer\\Properties\\launchSettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.IdentityServer\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.IdentityServer\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.API\\Startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\model\\UserDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.API\\model\\UserDbContext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\model\\userModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.API\\model\\userModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.API\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\NewFile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.API\\NewFile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.UserService.Host\\Squib.UserService.Host.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Squib.UserService.Host\\Squib.UserService.Host.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,129 +17,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "Squib.IdentityServer\\Properties\\launchSettings.json",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Properties\\launchSettings.json",
-              "RelativeToolTip": "Squib.IdentityServer\\Properties\\launchSettings.json",
+              "DocumentIndex": 1,
+              "Title": "Squib.UserService.Host.csproj",
+              "DocumentMoniker": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.UserService.Host\\Squib.UserService.Host.csproj",
+              "RelativeDocumentMoniker": "Squib.UserService.Host\\Squib.UserService.Host.csproj",
+              "ToolTip": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.UserService.Host\\Squib.UserService.Host.csproj",
+              "RelativeToolTip": "Squib.UserService.Host\\Squib.UserService.Host.csproj",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-25T16:50:12.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\appsettings.json",
-              "RelativeDocumentMoniker": "Squib.IdentityServer\\appsettings.json",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\appsettings.json",
-              "RelativeToolTip": "Squib.IdentityServer\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-07-25T16:49:58.815Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UserDbContext.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\model\\UserDbContext.cs",
-              "RelativeDocumentMoniker": "Squib.UserService.API\\model\\UserDbContext.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\model\\UserDbContext.cs",
-              "RelativeToolTip": "Squib.UserService.API\\model\\UserDbContext.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T13:02:10.893Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Startup.cs",
-              "RelativeDocumentMoniker": "Squib.UserService.API\\Startup.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Startup.cs",
-              "RelativeToolTip": "Squib.UserService.API\\Startup.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:53:45.448Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "userModel.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\model\\userModel.cs",
-              "RelativeDocumentMoniker": "Squib.UserService.API\\model\\userModel.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\model\\userModel.cs",
-              "RelativeToolTip": "Squib.UserService.API\\model\\userModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:53:14.879Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Program.cs",
-              "RelativeDocumentMoniker": "Squib.UserService.API\\Program.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Program.cs",
-              "RelativeToolTip": "Squib.UserService.API\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:52:17.513Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "NewFile",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\NewFile",
-              "RelativeDocumentMoniker": "Squib.UserService.API\\NewFile",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\NewFile",
-              "RelativeToolTip": "Squib.UserService.API\\NewFile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2024-07-02T12:52:11.68Z"
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-08-13T16:16:25.165Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.Host\\Startup.cs",
-              "RelativeDocumentMoniker": "Squib.UserService.Host\\Startup.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.Host\\Startup.cs",
-              "RelativeToolTip": "Squib.UserService.Host\\Startup.cs",
-              "ViewState": "AQIAADgAAAAAAAAAAAAswAkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:51:50.176Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "userController.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.Host\\Controllers\\userController.cs",
-              "RelativeDocumentMoniker": "Squib.UserService.Host\\Controllers\\userController.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.Host\\Controllers\\userController.cs",
-              "RelativeToolTip": "Squib.UserService.Host\\Controllers\\userController.cs",
-              "ViewState": "AQIAAB0AAAAAAAAAAAAkwAsAAAAjAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-02T12:51:38.505Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Program.cs",
-              "RelativeDocumentMoniker": "Squib.IdentityServer\\Program.cs",
-              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Program.cs",
-              "RelativeToolTip": "Squib.IdentityServer\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-07-25T16:50:08.029Z"
+              "Title": "NewFile",
+              "DocumentMoniker": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\NewFile",
+              "ToolTip": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\NewFile",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2024-07-02T12:52:11.68Z"
             }
           ]
         }

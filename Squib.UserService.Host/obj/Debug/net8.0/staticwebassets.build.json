@@ -1,21 +1,21 @@
 {
   "Version": 1,
-  "Hash": "edN5KypfZfTCth20735JMqwzl4CALkQyb6iUGBcaj+U=",
+  "Hash": "dZ8YE35tZfyHGzHcvEMrJGneMmErZOS7irnq4CnThz0=",
   "Source": "Squib.UserService.Host",
   "BasePath": "_content/Squib.UserService.Host",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [
     {
-      "Identity": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.UserService.API\\Squib.UserService.API.csproj",
+      "Identity": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.UserService.API\\Squib.UserService.API.csproj",
       "Version": 2,
       "Source": "Squib.UserService.API",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
-      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "AdditionalPublishProperties": "",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
-      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+      "AdditionalBuildProperties": "",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework"
     }
   ],
   "DiscoveryPatterns": [],

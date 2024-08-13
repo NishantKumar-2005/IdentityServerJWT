@@ -179,3 +179,6 @@ E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\obj\Debug\net8.0\re
 E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\obj\Debug\net8.0\Squib.UserService.Host.pdb
 E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\obj\Debug\net8.0\Squib.UserService.Host.genruntimeconfig.cache
 E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\obj\Debug\net8.0\ref\Squib.UserService.Host.dll
+C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

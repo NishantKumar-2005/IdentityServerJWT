@@ -1,10 +1,11 @@
-﻿using Squib.UserService.API.Model;
+﻿using Squib.UserService.API.model;
+using Squib.UserService.API.Model;
 
 namespace Squib.UserService.API.Service;
 
 public interface IUSER_Service
 {
-    public List<UserDto> GetUsers();
+    public List<UserRDto> GetUsers();
     public UserDto GetUserById(int id);
 
     public void AddUser(UserDto user);

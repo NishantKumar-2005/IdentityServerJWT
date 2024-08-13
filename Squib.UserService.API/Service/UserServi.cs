@@ -1,4 +1,5 @@
 ﻿
+using Squib.UserService.API.model;
 using Squib.UserService.API.Model;
 using Squib.UserService.API.Repository;
 namespace Squib.UserService.API.Service;
@@ -12,7 +13,7 @@ public class UserServi: IUSER_Service
         _userRepo = userRepo;
     }
 
-    public List<UserDto> GetUsers()
+    public List<UserRDto> GetUsers()
     {
        return _userRepo.GetUsers();
     }
