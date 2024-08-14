@@ -5600,8 +5600,30 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'IdentityServer4' 4.1.2 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-55p7-v223-x366",
+      "libraryId": "IdentityServer4",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    },
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'IdentityServer4' 4.1.2 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-ff4q-64jc-gx98",
+      "libraryId": "IdentityServer4",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
