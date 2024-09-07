@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "dZ8YE35tZfyHGzHcvEMrJGneMmErZOS7irnq4CnThz0=",
+  "Hash": "J2MusVH37v5kv8w3wYI7pf1pqEI4bsBtySPd3r8glnc=",
   "Source": "Squib.UserService.Host",
   "BasePath": "_content/Squib.UserService.Host",
   "Mode": "Default",
@@ -12,10 +12,10 @@
       "Source": "Squib.UserService.API",
       "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
       "AdditionalPublishProperties": "",
-      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
       "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
       "AdditionalBuildProperties": "",
-      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;Configuration;Platform;TargetFramework"
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
     }
   ],
   "DiscoveryPatterns": [],

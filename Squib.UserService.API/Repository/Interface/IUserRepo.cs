@@ -5,14 +5,14 @@ namespace Squib.UserService.API.Repository;
 
 public interface IUserRepo
 {
-    public List<UserRDto> GetUsers();
+    public List<UserDto> GetUsers();
     public UserDto GetUserById(int id);
 
-    public void AddUser(UserDto user);
+    public bool AddUser(UserDto user);
 
-    public void UpdateUser(UserDto user);
+    public bool UpdateUser(UserDto user);
 
-    public void DeleteUser(int id);
+    public bool DeleteUser(int id);
 
    
 

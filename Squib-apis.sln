@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Squib.UserService.Host", "S
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Squib.IdentityServer", "Squib.IdentityServer\Squib.IdentityServer.csproj", "{DD9D3D50-8C23-4A74-99F9-BFF16B607363}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject1", "TestProject1\TestProject1.csproj", "{73FFB84A-ABA7-466E-BFD6-A8735F6E69AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{DD9D3D50-8C23-4A74-99F9-BFF16B607363}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD9D3D50-8C23-4A74-99F9-BFF16B607363}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD9D3D50-8C23-4A74-99F9-BFF16B607363}.Release|Any CPU.Build.0 = Release|Any CPU
+		{73FFB84A-ABA7-466E-BFD6-A8735F6E69AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73FFB84A-ABA7-466E-BFD6-A8735F6E69AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73FFB84A-ABA7-466E-BFD6-A8735F6E69AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73FFB84A-ABA7-466E-BFD6-A8735F6E69AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

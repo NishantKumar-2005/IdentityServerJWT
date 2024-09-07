@@ -2,6 +2,7 @@
 using AutoMapper;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Options;
+using Newtonsoft.Json;
 using Squib.UserService.API.config;
 using Squib.UserService.API.model;
 using Squib.UserService.API.Model;
@@ -13,15 +14,15 @@ public class UserRepo : IUserRepo
     private readonly ILogger<UserRepo> _logger;
     private readonly ConnectionString _connectionString;
 
-    private readonly IMapper _mapper;
+    
 
-    public UserRepo(ILogger<UserRepo> logger, IOptions<ConnectionString> connectionStringOption , IMapper mapper)
+    public UserRepo(ILogger<UserRepo> logger, IOptions<ConnectionString> connectionStringOption )
     {
         _logger = logger;
         _connectionString = connectionStringOption.Value;
-        _mapper = mapper;
+        
     }
-    public List<UserRDto> GetUsers()
+    public List<UserDto> GetUsers()
     {
         List<UserDto> UserData = new List<UserDto>();
         // Add logic to get users from the database
@@ -50,11 +51,7 @@ public class UserRepo : IUserRepo
         {
             _logger.LogError($"{e.Message}\n{e.StackTrace}");
         }
-
-
-        // var UserRdata = _mapper.Map<UserRDto>(UserData);
-        var UserRdata = _mapper.Map<List<UserRDto>>(UserData);
-        return UserRdata;
+        return UserData;
 
 
     }
@@ -94,7 +91,7 @@ public class UserRepo : IUserRepo
 
         return UserData;
     }
-public void AddUser(UserDto user)
+public bool AddUser(UserDto user)
 {
     try
     {
@@ -110,38 +107,45 @@ public void AddUser(UserDto user)
         command.Connection = connection;
         connection.Open();
         command.ExecuteNonQuery();
+        return true;
     }
     catch (Exception e)
     {
         _logger.LogError($"{e.Message}\n{e.StackTrace}");
+        return false;
     }
 }
 
 
-    public void UpdateUser(UserDto user)
+    public bool UpdateUser(UserDto user)
+{
+    try
     {
-        // Add logic to update user in the database
-        try
-        {
-            using var connection = new SqlConnection(_connectionString.MyDb);
-            using var command = connection.CreateCommand();
-            command.CommandType = CommandType.Text;
-            command.CommandText = "UPDATE UserDto_New SET Email = @Email, FirstName = @FirstName,LastName=@LastName WHERE Id = @Id";
-            command.Parameters.AddWithValue("@Email", user.Email);
-            command.Parameters.AddWithValue("@FirstName", user.FirstName);
-            command.Parameters.AddWithValue("@Id", user.Id);
-            command.Parameters.AddWithValue("@LastName", user.LastName);
-            command.Connection = connection;
-            connection.Open();
-            command.ExecuteNonQuery();
+        using var connection = new SqlConnection(_connectionString.MyDb);
+        using var command = connection.CreateCommand();
+        
+        command.CommandType = CommandType.Text;
+        command.CommandText = "UPDATE UserDto_New SET Email = @Email, FirstName = @FirstName, LastName = @LastName WHERE Id = @Id";
+        
+        command.Parameters.Add("@Email", SqlDbType.NVarChar).Value = user.Email ?? (object)DBNull.Value;
+        command.Parameters.Add("@FirstName", SqlDbType.NVarChar).Value = user.FirstName ?? (object)DBNull.Value;
+        command.Parameters.Add("@LastName", SqlDbType.NVarChar).Value = user.LastName ?? (object)DBNull.Value;
+        command.Parameters.Add("@Id", SqlDbType.Int).Value = user.Id;
+
+        connection.Open();
+        int rowsAffected = command.ExecuteNonQuery();
+
+        return rowsAffected > 0;
     }
     catch (Exception e)
-        {
-            _logger.LogError($"{e.Message}\n{e.StackTrace}");
-        }
+    {
+        _logger.LogError($"{e.Message}\n{e.StackTrace}");
+        return false;
     }
+}
 
-    public void DeleteUser(int id)
+
+    public bool DeleteUser(int id)
     {
         // Add logic to delete user from the database
         try
@@ -154,8 +158,10 @@ public void AddUser(UserDto user)
             command.Connection = connection;
             connection.Open();
             command.ExecuteNonQuery();
+            return true;
     }catch (Exception e){
         _logger.LogError($"{e.Message}\n{e.StackTrace}");
+        return false;
     
     }
     }
