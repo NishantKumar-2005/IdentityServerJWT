@@ -22,39 +22,43 @@ public class UserRepo : IUserRepo
         _connectionString = connectionStringOption.Value;
         
     }
-    public List<UserDto> GetUsers()
+    public async Task<List<UserDto>> GetUsers()
+{
+    List<UserDto> userData = new List<UserDto>();
+    // Add logic to get users from the database
+    try
     {
-        List<UserDto> UserData = new List<UserDto>();
-        // Add logic to get users from the database
-        try
-        {
-            using var connection = new SqlConnection(_connectionString.MyDb);
-            using var commad = connection.CreateCommand();
-            commad.CommandType = CommandType.Text;
-            commad.CommandText = "SELECT * FROM UserDto_New";
-            commad.Connection = connection;
-            connection.Open();
+        using var connection = new SqlConnection(_connectionString.MyDb);
+        using var command = connection.CreateCommand();
+        command.CommandType = CommandType.Text;
+        command.CommandText = "SELECT * FROM UserDto_New";
+        command.Connection = connection;
+        
+        // Open connection asynchronously
+        await connection.OpenAsync();
 
-            using var reader = commad.ExecuteReader();
-            while (reader.Read())
+        // Execute reader asynchronously
+        using var reader = await command.ExecuteReaderAsync();
+        
+        while (await reader.ReadAsync()) // Asynchronous read
+        {
+            userData.Add(new UserDto
             {
-                UserData.Add(new UserDto
-                {
-                    Id = reader.GetInt32(0),
-                    Email = reader.GetString(1),
-                    FirstName = reader.GetString(2),
-                    LastName = reader.GetString(3)
-                });
-            }
+                Id = reader.GetInt32(0),
+                Email = reader.GetString(1),
+                FirstName = reader.GetString(2),
+                LastName = reader.GetString(3)
+            });
         }
-        catch (Exception e)
-        {
-            _logger.LogError($"{e.Message}\n{e.StackTrace}");
-        }
-        return UserData;
-
-
     }
+    catch (Exception e)
+    {
+        _logger.LogError($"{e.Message}\n{e.StackTrace}");
+    }
+
+    return userData;
+}
+
 
     public UserDto GetUserById(int id)
     {
@@ -78,6 +82,7 @@ public class UserRepo : IUserRepo
                     Id = reader.GetInt32(0),
                     Email = reader.GetString(1),
                     FirstName = reader.GetString(2),
+                    LastName = reader.GetString(3)
                 };
             }
 

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,7 +9,7 @@ using Squib.UserService.API.Service;
 
 [ApiController]
 [Route("api/[controller]")]
-[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+// [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
 public class UserController : ControllerBase
 {
@@ -20,11 +21,13 @@ public class UserController : ControllerBase
     }
 
     [HttpGet]
-    public IActionResult GetAllUsers()
-    {
-        var users = _userService.GetUsers();
-        return Ok(users);
-    }
+[HttpGet]
+public async Task<IActionResult> GetAllUsers()
+{
+    var users = await _userService.GetUsers();
+    return Ok(users);
+}
+
 
     [HttpGet("{id}")]
     public IActionResult GetUserById(int id)

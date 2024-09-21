@@ -5,7 +5,7 @@ namespace Squib.UserService.API.Service;
 
 public interface IUSER_Service
 {
-    public List<UserRDto> GetUsers();
+    public Task<List<UserRDto>> GetUsers();
     public UserDto GetUserById(int id);
 
     public bool AddUser(UserDto user);

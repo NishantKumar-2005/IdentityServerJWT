@@ -1,4 +1,7 @@
-﻿using AutoMapper;
+﻿using System.Text;
+using AutoMapper;
+using Microsoft.Extensions.Caching;
+using Microsoft.Extensions.Caching.Distributed;
 using Newtonsoft.Json;
 using Squib.UserService.API.model;
 using Squib.UserService.API.Model;
@@ -9,34 +12,69 @@ public class UserServi: IUSER_Service
 {
     private readonly IUserRepo _userRepo;
     private readonly IMapper _mapper;
+
+    private string key = "Master";
+
+    public readonly IDistributedCache _distributedCache;
     
-    public UserServi(IUserRepo userRepo, IMapper mapper)
+    public UserServi(IUserRepo userRepo, IMapper mapper , IDistributedCache distributedCache)
     {
         _userRepo = userRepo;
         _mapper = mapper;
-        
+        _distributedCache = distributedCache;
     }
 
-    public List<UserRDto> GetUsers()
+public async Task<List<UserRDto>> GetUsers()
+{
+    List<UserDto> userData = new List<UserDto>();
+    byte[] encodedList = await _distributedCache.GetAsync(key);
+
+    if (encodedList != null)
     {
-        var UserData =_userRepo.GetUsers();
-        // var UserRdata = _mapper.Map<UserRDto>(UserData);
-        var UserRdata = _mapper.Map<List<UserRDto>>(UserData);
-        
-        string jsonString = JsonConvert.SerializeObject(UserRdata);
-        Console.WriteLine("Serialized JSON string (Newtonsoft.Json):");
-        Console.WriteLine(jsonString);
-
-        var deserializedUserDto = JsonConvert.DeserializeObject<List<UserDto>>(jsonString);
-        Console.WriteLine("\nDeserialized UserDto object (Newtonsoft.Json):");
-        Console.WriteLine($"Id: {deserializedUserDto[0].Id}");
-        Console.WriteLine($"Email: {deserializedUserDto[0].Email}");
-        Console.WriteLine($"FirstName: {deserializedUserDto[0].FirstName}");
-        Console.WriteLine($"LastName: {deserializedUserDto[0].LastName}");
-
-        
-       return UserRdata;
+        try
+        {
+            userData = JsonConvert.DeserializeObject<List<UserDto>>(Encoding.UTF8.GetString(encodedList));
+            Console.WriteLine("Data retrieved from cache");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine($"Cache deserialization error: {ex.Message}");
+            // Handle cache corruption, possibly clear the cache
+            await _distributedCache.RemoveAsync(key);
+        }
     }
+
+    if (encodedList == null || userData == null || userData.Count == 0)
+    {
+        userData = await _userRepo.GetUsers();
+        if (userData != null)
+        {
+            try
+            {
+                string jsonString = JsonConvert.SerializeObject(userData);
+                encodedList = Encoding.UTF8.GetBytes(jsonString);
+
+                var cacheEntryOptions = new DistributedCacheEntryOptions()
+                    .SetSlidingExpiration(TimeSpan.FromMinutes(20))
+                    .SetAbsoluteExpiration(TimeSpan.FromHours(10));
+
+                await _distributedCache.SetAsync(key, encodedList, cacheEntryOptions);
+                Console.WriteLine("Data retrieved from DB and cached");
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine($"Cache serialization error: {ex.Message}");
+            }
+        }
+    }
+
+    var userRData = _mapper.Map<List<UserRDto>>(userData);
+    return userRData;
+}
+
+
+
+
 
     public UserDto GetUserById(int id)
     {

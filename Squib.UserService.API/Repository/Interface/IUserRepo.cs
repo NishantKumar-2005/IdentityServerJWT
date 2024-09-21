@@ -5,7 +5,7 @@ namespace Squib.UserService.API.Repository;
 
 public interface IUserRepo
 {
-    public List<UserDto> GetUsers();
+    public Task<List<UserDto>> GetUsers();
     public UserDto GetUserById(int id);
 
     public bool AddUser(UserDto user);
