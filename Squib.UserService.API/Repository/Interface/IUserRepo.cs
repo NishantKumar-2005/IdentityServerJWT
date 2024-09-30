@@ -8,7 +8,7 @@ public interface IUserRepo
     public Task<List<UserDto>> GetUsers();
     public UserDto GetUserById(int id);
 
-    public bool AddUser(UserDto user);
+    public Task<bool> AddUser(UserDto user);
 
     public bool UpdateUser(UserDto user);
 

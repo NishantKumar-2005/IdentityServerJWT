@@ -1,25 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj": {}
+    "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj": {
+    "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj",
+        "projectUniqueName": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj",
         "projectName": "Squib.IdentityServer",
-        "projectPath": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj",
-        "packagesPath": "C:\\Users\\NishantKumar\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\NishantKumar\\Desktop\\squib-apis\\Squib-apis\\Squib.IdentityServer\\obj\\",
+        "projectPath": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\Squib.IdentityServer.csproj",
+        "packagesPath": "C:\\Users\\nisha\\.nuget\\packages\\",
+        "outputPath": "E:\\college MSIT\\Squib-apis\\Squib-apis\\Squib.IdentityServer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\NishantKumar\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\nisha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -97,7 +100,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

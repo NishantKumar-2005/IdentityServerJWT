@@ -22,16 +22,16 @@ public class UserRepo : IUserRepo
         _connectionString = connectionStringOption.Value;
         
     }
-    public async Task<List<UserDto>> GetUsers()
+public async Task<List<UserDto>> GetUsers()
 {
     List<UserDto> userData = new List<UserDto>();
-    // Add logic to get users from the database
+    
     try
     {
         using var connection = new SqlConnection(_connectionString.MyDb);
         using var command = connection.CreateCommand();
         command.CommandType = CommandType.Text;
-        command.CommandText = "SELECT * FROM UserDto_New";
+        command.CommandText = "SELECT * FROM UserDto_New"; // Ensure this query is correct
         command.Connection = connection;
         
         // Open connection asynchronously
@@ -44,12 +44,15 @@ public class UserRepo : IUserRepo
         {
             userData.Add(new UserDto
             {
-                Id = reader.GetInt32(0),
-                Email = reader.GetString(1),
+                Id = reader.GetInt32(0),          // Ensure this matches your UserDto structure
+                Email = reader.GetString(1),      // Ensure the column indices match
                 FirstName = reader.GetString(2),
                 LastName = reader.GetString(3)
             });
         }
+
+        // Log the number of users fetched
+        _logger.LogInformation($"Total users fetched: {userData.Count}");
     }
     catch (Exception e)
     {
@@ -58,6 +61,7 @@ public class UserRepo : IUserRepo
 
     return userData;
 }
+
 
 
     public UserDto GetUserById(int id)
@@ -96,7 +100,7 @@ public class UserRepo : IUserRepo
 
         return UserData;
     }
-public bool AddUser(UserDto user)
+public  async Task<bool>  AddUser(UserDto user)
 {
     try
     {
@@ -110,8 +114,8 @@ public bool AddUser(UserDto user)
         command.Parameters.AddWithValue("@FirstName", user.FirstName);
         command.Parameters.AddWithValue("@LastName", user.LastName);
         command.Connection = connection;
-        connection.Open();
-        command.ExecuteNonQuery();
+        await connection.OpenAsync();
+        await command.ExecuteNonQueryAsync();
         return true;
     }
     catch (Exception e)

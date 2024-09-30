@@ -13,6 +13,7 @@ namespace Squib.UserService.API
             services.AddSingleton<IUSER_Service, UserServi>();
             services.AddSingleton<IORDER_Service,OrderServi>();
             services.AddSingleton<IOrderRepo,OrderRepo>();
+            // services.AddSingleton<IHubContext<TrackingHub>, HubContext<TrackingHub>>();
             return services;
         }
     }

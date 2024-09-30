@@ -150,3 +150,13 @@ C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\TestProject1\obj\Debug\net8.
 C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.pdb
 C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.genruntimeconfig.cache
 C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\ref\TestProject1.dll
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\bin\Debug\net8.0\CoverletSourceRootsMapping_TestProject1
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.csproj.AssemblyReference.cache
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.GeneratedMSBuildEditorConfig.editorconfig
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.AssemblyInfoInputs.cache
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.AssemblyInfo.cs
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.csproj.CoreCompileInputs.cache
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.sourcelink.json
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.dll
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\refint\TestProject1.dll
+e:\college MSIT\Squib-apis\Squib-apis\TestProject1\obj\Debug\net8.0\TestProject1.pdb

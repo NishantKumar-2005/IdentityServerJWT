@@ -43,9 +43,9 @@ public async Task<IActionResult> GetAllUsers()
 
 
     [HttpPost]
-public IActionResult AddUser([FromBody] UserDto user)
+public  async Task<IActionResult> AddUser([FromBody] UserDto user)
 {
-    _userService.AddUser(user);
+    await _userService.AddUser(user);
     return CreatedAtAction(nameof(GetUserById), new { id = user.Id }, user);
 }
     [HttpPut("{id}")]

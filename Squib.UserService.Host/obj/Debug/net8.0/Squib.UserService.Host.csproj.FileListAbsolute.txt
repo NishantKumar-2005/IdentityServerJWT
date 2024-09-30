@@ -190,3 +190,14 @@ C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\D
 C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
 C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\NishantKumar\Desktop\squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\StackExchange.Redis.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\AutoMapper.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.Extensions.Caching.Redis.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.Extensions.Caching.StackExchangeRedis.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\Pipelines.Sockets.Unofficial.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\StackExchange.Redis.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\StackExchange.Redis.StrongName.dll
+E:\college MSIT\Squib-apis\Squib-apis\Squib.UserService.Host\bin\Debug\net8.0\System.Net.WebSockets.WebSocketProtocol.dll
