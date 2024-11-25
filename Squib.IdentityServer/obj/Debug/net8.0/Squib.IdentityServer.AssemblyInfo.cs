@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Squib.IdentityServer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d9b2e140ec1dc8b2e55b2b3ddbe2da98527bab1")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+74a13d7fb2229ea7aa9fa185f2c8e76a6c7400c3")]
 [assembly: System.Reflection.AssemblyProductAttribute("Squib.IdentityServer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Squib.IdentityServer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -53,23 +53,23 @@ namespace Squib.UserService.Host
             services.AddHealthChecks();
 
             // Add JWT Authentication
-            // services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            //     .AddJwtBearer(options =>
-            //     {
-            //         options.Authority = "http://localhost:5140"; // IdentityServer URL
-            //         options.Audience = "api1";
-            //         options.RequireHttpsMetadata = false;
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+                {
+                    options.Authority = "http://localhost:5140"; // IdentityServer URL
+                    options.Audience = "api1";
+                    options.RequireHttpsMetadata = false;
 
-            //         options.TokenValidationParameters = new TokenValidationParameters
-            //         {
-            //             ValidateIssuer = true,
-            //             ValidateAudience = true,
-            //             ValidateLifetime = true,
-            //             ValidateIssuerSigningKey = true,
-            //             ValidIssuer = "http://localhost:5140", // IdentityServer URL
-            //             ValidAudience = "api1"
-            //         };
-            //     });
+                    options.TokenValidationParameters = new TokenValidationParameters
+                    {
+                        ValidateIssuer = true,
+                        ValidateAudience = true,
+                        ValidateLifetime = true,
+                        ValidateIssuerSigningKey = true,
+                        ValidIssuer = "http://localhost:5140", // IdentityServer URL
+                        ValidAudience = "api1"
+                    };
+                });
 
             services.AddControllers();
             services.AddDistributedRedisCache(options=>{
@@ -93,8 +93,8 @@ namespace Squib.UserService.Host
 
             app.UseHttpsRedirection();
             app.UseRouting();
-            // app.UseAuthentication();
-            // app.UseAuthorization();
+            app.UseAuthentication();
+            app.UseAuthorization();
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapHealthChecks("/livez");

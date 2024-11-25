@@ -9,7 +9,7 @@ using Squib.UserService.API.Service;
 
 [ApiController]
 [Route("api/[controller]")]
-// [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
+[Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
 
 public class UserController : ControllerBase
 {
@@ -64,11 +64,5 @@ public  async Task<IActionResult> AddUser([FromBody] UserDto user)
     {
         _userService.DeleteUser(id);
         return NoContent();
-    }
-
-
-
-   
-
-    
+    }    
 }
